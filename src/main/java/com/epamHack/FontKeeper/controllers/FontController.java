@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import static com.epamHack.FontKeeper.constants.EndPoints.*;
 
+import com.epamHack.FontKeeper.services.FontService;
+
 @RestController
 public class FontController {
 
-    @Autowired
     private FontService fontService;
 
     @GetMapping(API_FONTS)
